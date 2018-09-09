@@ -1,0 +1,81 @@
+@import '../../../../public/assets/scss/variables.scss';
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0.4rem 1rem;
+  margin: 0;
+  border: 1px solid $color_dark;
+  border-radius: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  color: $color_dark;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: initial;
+  }
+
+  &:hover {
+    background: $color_white;
+  }
+
+  &.button-block {
+    display: block;
+    width: 100%;
+  }
+
+  &.button-default {
+    background-color: $color_grey_dark;
+    color: $color_white;
+    border-color: $color_grey_darker;
+    &:hover {
+      background-color: $color_grey_darker;
+      border-color: $color_grey_darker;
+    }
+  }
+  &.button-primary {
+    background: $color_red;
+    color: $color_white;
+    border-color: $color_red;
+
+    &:hover {
+      background: $color_red_darker;
+      border-color: $color_red_darker;
+    }
+  }
+
+  &.disabled {
+    background: $color_disabled;
+    color: $color_white;
+    border-color: $color_disabled;
+
+    &:hover {
+      background: $color_disabled;
+      border-color: $color_disabled;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .button {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  .button {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}

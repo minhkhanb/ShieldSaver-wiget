@@ -1,0 +1,37 @@
+{
+  "step": "Step",
+  "user_information": {
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "zip_code": "Zip Code",
+    "address": "Address",
+    "address_1": "Address 1",
+    "address_2": "Address 2",
+    "city": "City"
+  },
+  "contact_information": {
+    "title": "Request a Quote",
+    "step_title": "Step 1: Contact Information",
+    "lbl_checkbox": "I might file an insurance claim."
+  },
+  "vehicle_information": {
+    "title": "Request a Quote",
+    "step_title": "Step 2: Vehicle Information",
+    "title-header-popup": "Vehicle Not Found",
+    "title-content-popup": "No VIN found for this vehicle.",
+    "content-info-popup": "Click \"Continue\" to select vehicle make, model, and year.",
+    "title_vehicle_lookup": "Vehicle Lookup",
+    "title_manual_build": "Manual Build"
+  },
+  "quotation": {
+    "title": "Your Automotive Glass Quote",
+    "quote": "Quote: #",
+    "replacement_cost": "Replacement Cost: $"
+  },
+  "confirm_contact_information": {
+    "title": "Book an Appointment",
+    "title_child": "A representative will contact you on confirm details."
+  }
+}

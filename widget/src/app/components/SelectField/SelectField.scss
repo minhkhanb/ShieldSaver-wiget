@@ -1,0 +1,81 @@
+@import '../../../../public/assets/scss/variables.scss';
+
+$input_text_height: 24px;
+$input_padding: 6px;
+$input_height: $input_text_height + $input_padding * 2;
+
+.group-select-field {
+  position: relative;
+  margin: .5rem 0;
+
+  .select-field-label {
+    padding: 0 0 0.5rem 0;
+    font-size: 1rem;
+
+    &.lbl-block {
+      display: block;
+      padding: 0;
+    }
+    .select-field-required {
+      //font-weight: 700;
+      font-size: 1rem;
+      padding: 0 0.2rem;
+      color: $color_red;
+    }
+  }
+
+  .form-control {
+    width: 100%;
+    height: $input_height;
+    padding: $input_padding;
+    line-height: $input_text_height;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    outline: none;
+
+    .lbl-block {
+      display: inline-block;
+    }
+
+    &:focus {
+      border: 1px solid $color_red;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(255, 0, 10, 0.25);
+    }
+  }
+
+  .input-field {
+    width: 100%;
+    height: $input_height;
+    padding: $input_padding;
+    line-height: $input_text_height;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $color_red;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(255, 0, 10, 0.25);
+    }
+  }
+
+  .error {
+    color: $color_red;
+    padding: 0.2rem 0rem;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 100%;
+    left: 0;
+  }
+}
+
+@media (max-height: 40rem) {
+
+}

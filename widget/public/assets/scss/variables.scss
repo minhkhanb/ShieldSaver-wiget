@@ -1,0 +1,21 @@
+$color_white: #FFFFFF;
+$color_red: #ff000a;
+$color_red_darker: darken($color_red, 10%);
+$color_grey: #e4e5e6;
+$color_grey_dark: darken($color_grey, 15%);
+$color_grey_darker: darken($color_grey, 25%);
+$color_grey_light: lighten($color_grey, 5%);
+$color_grey_lighter: lighten($color_grey, 10%);
+$color_dark: darken($color_grey, 35%);
+
+$header_bg_color: #1F2534;
+$header_text_color: #7A8291;
+$header_text_active_color: $color-white;
+$header_padding: 20px;
+$header_font_size: 30px;
+$header_line_height: 30px;
+$header_height: $header_font_size + $header_padding * 2;
+
+$color_disabled: #cccccc;
+$login_bg_main: #F8F8FA;
+$color_text_input: #424242;

@@ -1,0 +1,33 @@
+@import '../../../../public/assets/scss/variables.scss';
+
+.content-quote {
+  text-align: center;
+
+  .content-quote-code {
+    text-align: left;
+  }
+  .content-quote-date {
+    text-align: right;
+  }
+  
+  @media (max-width: 40rem) {
+
+  }
+}
+
+.content-replacement-cost {
+  padding-left: 1rem;
+}
+
+.desContent {
+  min-height: 15rem;
+  text-align: left;
+}
+
+.btn-quote {
+  @media (max-width: 65rem) {
+    font-size: 0.6rem;
+  }
+}
+
+

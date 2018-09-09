@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// var data = {
+		// 	"grant_type": "password",
+		// 	"client_id": 2,
+		// 	"client_secret": "gNLz4yD0EB7V6et8n6JzH5fTRMhkBmi4BDWDb25t",
+		// 	"username": "user@zaitenllc.com",
+		// 	"password": "Aa,123456",
+		// 	"scope": ""
+		// };
+      try {
+	      var settings = {
+		      url: 'https://shieldsaver.pro/api/vehicle/find',
+		      method: 'GET',
+		      processData: false,
+		      dataType: 'json',
+		      contentType: 'application/json',
+		      headers: {
+			      Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU2Y2M5NjEyMWE0NDVlNWFmZTY5YzAyZTFkMjdlNDlmMDhkNDdkNGFhMzhkYzViOTc5YTcwMTFkMTEwZDFkYjlkNGEwMTUwNWQ1NDQ0NTQ3In0.eyJhdWQiOiIyIiwianRpIjoiNTZjYzk2MTIxYTQ0NWU1YWZlNjljMDJlMWQyN2U0OWYwOGQ0N2Q0YWEzOGRjNWI5NzlhNzAxMWQxMTBkMWRiOWQ0YTAxNTA1ZDU0NDQ1NDciLCJpYXQiOjE1MzU2ODkwMjQsIm5iZiI6MTUzNTY4OTAyNCwiZXhwIjoxNTM2OTg1MDI0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.iPWP-_t3U8azujk5yKIETRdPqii4c7wM0kkPXyC7yf46kdMbQM919x8mMkw_gWf0yxNvsNov5Fg-i0fudhNSiKQldg0iEtRE0CKc-zLmklCvD8pYkkDWLQyyY2aMibuyIlN9g7qtnrSN-uusYMEmE0jTKq6vDRGOjIzByAe5ebdWYt-l72yivh1b3WlpCZ2GT8bf4wwsjJ9ulTccfDD4mTMXmpighYfKdG_6RsA5CK_Y83HvgGjWNtihng63BRGMc1UOEnQbuxA2H7YuRh5UTvcXkeaICOv-pdqnmboqsMD6GF_AMM7w6sMP7eCDtAtvFvLes4RrOEqwAOuK_hBTzb-EvAWW7ciq7UmOu-80j0S4WCO1ojralUo8IoUBa80r-uyT1isR_nj6HFzk16ki7IpPzpCFHQUYk1ZMR_lc6DLNT7-rW9bWrNTsRjDc0taL7RZFhc2IPzWvgq7j7yiIbQSZwu-ek7zofFht9y4Tjjj65igHg7SG43VCg1UmN6jgB3pVzuut6lGvJ9gXeMoio5u3zdRQAu51zMh0IFY-COsMjtbEIcLOOdFMdF-6NZoDESWeTngSt4C3Vow7lMAbKgg74rFRFReiL2i240LvDuoyOhmsEKaXh4lOQXLS3PSOna2TOq1GSHvg43VEC5-pcS9KF602r2cRfQ1vh_SXCXU',
+		      },
+		      data: $.param({state: "CA",	license_plate: "ssds"}),
+		      // data: {"state": "CA",	"license_plate": "ddddd"},
+		      success: function(data) {
+			      console.log(data);
+		      },
+		      error: function() {
+
+		      }
+	      };
+
+	      $.ajax(settings);
+      } catch(error) {
+
+      }
+
+
+	});
+</script>
+</body>
+</html>
